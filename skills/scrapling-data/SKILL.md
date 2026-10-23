@@ -46,7 +46,7 @@ Try these first (no payment, 30 calls/min per IP):
 | Polymarket odds for an event | `/v1/lookup/polymarket?q=bitcoin` | $0.005 |
 | Ad CPM/CPC/CTR benchmarks | `/v1/ads/cost-benchmarks?platform=meta&industry=retail` | $0.002 |
 | Any web page as clean LLM-ready Markdown | `/v1/scrape/text?url=https://...` | $0.003 |
-| Whole feed (500 coins, 1000 pools, ...) | `/v1/datasets/{id}/buy` | $0.01-$4.99 |
+| Whole feed (500 coins, 1,000+ DEX pools across 7 chains, ...) | `/v1/datasets/{id}/buy` | $0.01-$4.99 |
 | Test your payment setup | `/v1/ping` | $0.001 |
 
 Prefer the single-item lookup over buying a whole feed. Poll alerts/whale endpoints no faster than every few minutes; feeds refresh about every 30 min.
