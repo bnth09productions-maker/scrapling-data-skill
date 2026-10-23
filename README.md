@@ -11,3 +11,10 @@ An [Agent Skill](https://agentskills.io) that lets AI agents buy live crypto and
 Copy `skills/scrapling-data/` into your agent's skills folder (e.g. `~/.claude/skills/`).
 
 License: MIT
+
+
+## New: Trust Bundle ($0.04)
+`GET https://scraplingdata.xyz/v1/trust/agent?chain=base&address=0x...` — allow / caution / block + 0-100 trust score + reasons for any outside agent, wallet or token, in one x402 call.
+
+## Paid MCP tools
+Remote MCP server with every store endpoint as a pay-per-call tool (x402): `claude mcp add --transport http scrapling-data https://scraplingdata.xyz/mcp`. See [mcp/README.md](mcp/README.md).

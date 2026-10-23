@@ -26,6 +26,7 @@ Try these first (no payment, 30 calls/min per IP):
 ## Pick an endpoint
 | Need | Call | Price |
 |---|---|---|
+| Should I trust this outside agent, wallet or token? Trust Bundle: allow/caution/block + 0-100 trust score + reasons (counterparty + wallet profile + token verdict in one call; base, ethereum, solana) | `/v1/trust/agent?chain=base&address=0x...` | $0.04 |
 | Is it safe to pay or trade with this wallet or token? safe/caution/block + 0-100 score + reasons (ethereum, base, solana) | `/v1/check/counterparty?chain=ethereum&address=0x...` | $0.02 |
 | Should I trade this token? go/caution/avoid + liquidity, holders, taxes, contract flags (base, ethereum, bsc, arbitrum, polygon, optimism, avalanche, solana) | `/v1/token/verdict?chain=base&address=0x...` | $0.005 |
 | Is a Base token a scam/honeypot? 0-100 risk score | `/v1/lookup/token-risk/{address}` | $0.005 |
