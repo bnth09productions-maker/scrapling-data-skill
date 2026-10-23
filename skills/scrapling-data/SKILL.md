@@ -26,6 +26,8 @@ Try these first (no payment, 30 calls/min per IP):
 ## Pick an endpoint
 | Need | Call | Price |
 |---|---|---|
+| Full due-diligence report on a token or wallet before buying/listing/paying: verdict, red/green flags, DEX liquidity, holder concentration, whale netflow, lending, allow/caution/avoid + confidence, proof links (base, ethereum, solana) | `/v1/dd/report?chain=base&address=0x...` | $1.00 |
+| Quick due-diligence: allow/caution/avoid, top 3 flags, liquidity, holder concentration | `/v1/dd/quick?chain=base&address=0x...` | $0.25 |
 | Should I trust this outside agent, wallet or token? Trust Bundle: allow/caution/block + 0-100 trust score + reasons (counterparty + wallet profile + token verdict in one call; base, ethereum, solana) | `/v1/trust/agent?chain=base&address=0x...` | $0.04 |
 | Is it safe to pay or trade with this wallet or token? safe/caution/block + 0-100 score + reasons (ethereum, base, solana) | `/v1/check/counterparty?chain=ethereum&address=0x...` | $0.02 |
 | Should I trade this token? go/caution/avoid + liquidity, holders, taxes, contract flags (base, ethereum, bsc, arbitrum, polygon, optimism, avalanche, solana) | `/v1/token/verdict?chain=base&address=0x...` | $0.005 |
